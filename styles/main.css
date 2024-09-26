@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    font-family: 'lato', sans-serif;
+    font-weight: 900;
+    color: #E0F7FF;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    align-items: center;
+    letter-spacing: 2%;
+   
+    
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.first-title {
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.second-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: white;
+    font-family: karla, sans-serif;
+    font-weight: bold;
+    color:#555;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    font-size: 1.6rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+a:hover{
+    border: 1px solid #1bc7fb ;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+/* intro effect */ 
+#intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: out 2s ease 2s forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+#intro h1{
+    color: #e0287d;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+
+}
+
+@keyframes out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
