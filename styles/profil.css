@@ -8,10 +8,80 @@
     z-index: -1;
     filter: brightness(50%);
 }
+body {  
 
-.main{
+
+    width: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+    height: 100vh;
+}
+.main-div{
+    display: flex;
+    color: white;
+    flex-direction: column ;
+    width: 37%;
+    height: 60vh;
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 35px;
+    font-size: 1.2rem;
+
+    background: linear-gradient(to right, #100012, #47122d );
+}
+/* blur effect */ 
+@keyframes shadow {
+   0%{
+        box-shadow: 0 0 15px 4px#51c274, 0 0 25px 6px #51c274, 0 0 35px 8px #51c274, 0 0 45px 10px #51c274;
+   }
+
+    25% {
+        box-shadow: 0 0 10px 2px #c7006e, 0 0 20px 4px #c7006e, 0 0 30px 6px #c7006e, 0 0 40px 8px #c7006e;
+    }
+
+    50%{
+        box-shadow: 0 0 15px 4px#51c274, 0 0 25px 6px #51c274, 0 0 35px 8px #51c274, 0 0 45px 10px #51c274;
+    }
+
+    75%{
+        box-shadow: 0 0 10px 2px #c7006e, 0 0 20px 4px #c7006e, 0 0 30px 6px #c7006e, 0 0 40px 8px #c7006e;
+    }
+
+    100%{
+        box-shadow: 0 0 15px 4px#51c274, 0 0 25px 6px #51c274, 0 0 35px 8px #51c274, 0 0 45px 10px #51c274;
+    }
+
+}
+.shadow {
+    animation: shadow 4s ease infinite;
+}
+
+
+/* Font style */ 
+
+.profil-title{
+    display: flex;
+    justify-content: center;
+}
+
+.profil-talk{
+    display: flex;
+    margin: 0 10% 0 10%;
+    flex-direction: column;
+}
+
+.profil-talk a{
     display: flex;
     justify-content: center;
     color: white;
-    flex-direction: column ;
+    text-decoration: underline;
+    text-decoration-color: white;
 }
+
+/* zoom out */
+
+

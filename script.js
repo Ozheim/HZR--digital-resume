@@ -38,6 +38,6 @@ a.forEach((link) => {
 
     setTimeout(() => {
       window.location.href = event.target.href;
-    }, 5000);
+    }, 2190);
   });
 });
