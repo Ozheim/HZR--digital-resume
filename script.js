@@ -24,3 +24,20 @@ const loading = () => {
 };
 
 loading();
+
+const body = document.querySelector(".effect");
+const a = document.querySelectorAll("a");
+const video = document.querySelector("video");
+
+a.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    body.classList.add("hidden");
+    video.playbackRate = 2.0;
+    video.classList.add("zoomIn");
+
+    setTimeout(() => {
+      window.location.href = event.target.href;
+    }, 5000);
+  });
+});

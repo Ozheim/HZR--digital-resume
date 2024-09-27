@@ -15,7 +15,7 @@
     <video class="video-background" loop autoplay muted>
         <source src="./assets/video.mp4" type="video/mp4">
     </video>
-    
+    <div class="effect ">
     <header>
         <div class="img-container"><img src="./assets/logo.png" alt="logo" class="logo"></div>
         <h1 class="first-title">Heikel</h1>
@@ -28,26 +28,33 @@
                 <h1 class="intro-title">Bienvenue sur mon CV interactif</h1>
                 <p id="loading"></p>
             </div>
+            
 
           <!--Liste des liens -->
-            <ul>
-                <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)" class="layers glitch font" data-text="PROFIL">
-                    <a href="./pages/profil.html" class="first-item">PROFIL</a>
-                </li>
+        <ul>
+            <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)" class="layers glitch font" 
+                data-text="PROFIL">
+                <a href="./pages/profil.html" class="first-item">PROFIL</a>
+            </li>
+        
+            <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)" class="layers glitch font" data-text="PROJETS">
+                <a href="./pages/projets.html" class="second-item">PROJETS</a>
+            </li>
+        
+            <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)" class="layers glitch font" data-text="COMPETENCES">
+                <a href="./pages/competences.html" class="third-item">COMPETENCES</a>
+            </li>
+        
+            <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)" class="layers glitch font" data-text="CONTACT">
+                <a href="./pages/contact.html" class="fourth-item">CONTACT</a>
+            </li>
+        </ul>
 
-                <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)" class="layers glitch font" data-text="PROJETS" >
-                    <a href="./pages/" class="second-item ">PROJETS</a>
-                </li>
-                <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)"  class="layers glitch font" data-text="COMPETENCES" >
-                    <a href="./pages/" class="third-item ">COMPETENCES</a>
-                </li>
-                <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)" class="layers glitch font" data-text="CONTACT">
-                    <a href="./pages/" class="fourth-item ">CONTACT</a>
-                </li>
-            </ul>
                
 
         </main>
             <script src="./script.js"></script>
+    </div>
+
 </body> 
 </html>

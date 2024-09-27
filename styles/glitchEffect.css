@@ -87,8 +87,7 @@
     1%,
     7%,
     33%,
-    47%,
-    78%,
+    60%,
     93% {
         opacity: 0;
     }
@@ -109,7 +108,6 @@
 
     20% {
 
-        font-optical-sizing: auto;
         font-weight: 500;
         color: #fff;
         filter: blur(0);
@@ -117,12 +115,12 @@
 
     50% {
         font-family: 'Orbitron', sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         color: #1bc7fb;
         filter: blur(2px);
     }
 
-    60% {
+    70% {
 
         font-style: normal;
         color: #fff;

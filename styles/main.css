@@ -124,3 +124,27 @@ a:hover{
         visibility: hidden;
     }
 }
+
+/* Zoom out animation */
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+
+    }
+
+    100% {
+        transform: scale(4);
+      
+    }
+}
+
+.zoomIn {
+    animation: zoomIn 4s ease forwards ;
+}
+
+
+.hidden{
+    visibility: hidden;
+}
+
+
