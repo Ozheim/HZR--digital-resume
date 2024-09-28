@@ -30,9 +30,9 @@ main{
     opacity: 0.7;
     border-radius: 35px;
     font-size: 1.2rem;
-
     background: linear-gradient(to right, #100012, #47122d );
 }
+
 /* blur effect */ 
 @keyframes shadow {
    0%{
@@ -66,12 +66,14 @@ main{
 .profil-title{
     display: flex;
     justify-content: center;
+    margin-top: 9%;
 }
 
 .profil-talk{
     display: flex;
     margin: 0 10% 0 10%;
     flex-direction: column;
+    margin-top: 4%;
 }
 
 .profil-talk a{
@@ -85,3 +87,90 @@ main{
 /* zoom out */
 
 
+
+
+@keyframes minDiv {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(0);
+        opacity: 0;
+
+
+    }
+}
+
+.shrink {
+    animation: minDiv 2s ease forwards;
+}
+
+.reverse {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    margin-top: 9%;
+    text-decoration: none;
+    color: #c7006e;
+}
+
+.back:hover{
+    color:  red;
+}
+
+
+@media screen and (min-width:767px) and (max-width:1024px) {
+    .main-div {
+            width: 65%;
+  
+        
+        }
+    
+        .profil-title {
+            font-size: 1.7rem;
+            margin-top: 12%;
+        }
+    
+        .profil-talk {
+            align-items: center;
+            margin-top: 8%;
+        }
+    
+        .back {
+            margin-top: 11%;
+        }
+    
+    
+}
+
+@media screen and (max-width: 767px) {
+
+    .main-div{
+        width: 75%;
+        font-size: 0.9rem;
+    
+    }
+    
+    .profil-title{
+        font-size: 1.2rem;
+        margin-top: 16%;
+    }
+
+    .profil-talk{
+        align-items: center;
+        margin-top: 11%;
+    }
+
+    .back{
+        margin-top: 22%;
+    }
+}
