@@ -86,9 +86,6 @@ main{
 
 /* zoom out */
 
-
-
-
 @keyframes minDiv {
     from {
         transform: scale(1);

@@ -8,6 +8,7 @@ const onMouseOut = (event) => {
   li.classList.add("layers", "glitch", "font");
 };
 
+/* intro effect */
 const loading = () => {
   const p = document.getElementById("loading");
   let res = "";
@@ -25,6 +26,8 @@ const loading = () => {
 
 loading();
 
+/* zoom in effect */
+
 const body = document.querySelector(".effect");
 const a = document.querySelectorAll("a");
 const video = document.querySelector("video");
@@ -38,6 +41,6 @@ a.forEach((link) => {
 
     setTimeout(() => {
       window.location.href = event.target.href;
-    }, 2190);
+    }, 1820);
   });
 });

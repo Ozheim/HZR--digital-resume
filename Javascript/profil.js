@@ -1,7 +1,6 @@
 const mainDiv = document.querySelector(".main-div");
 const video = document.querySelector(".video-background");
 const link = document.querySelector(".back");
-const loadingElement = document.getElementById("loading");
 
 link.addEventListener("click", (e) => {
   e.preventDefault();

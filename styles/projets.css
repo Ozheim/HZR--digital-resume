@@ -1,7 +1,8 @@
 body {
     font-family: 'Orbitron', sans-serif;
     color: white;
-    background: transparent;
+    margin: 0;
+    padding: 0;
 }
 
 .project-container {
@@ -68,16 +69,13 @@ section {
     border: 2px solid rgba(0, 255, 255, 0.5);
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
     margin-top: 3%;
-    
 }
-
 
 section:hover {
     box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
 }
 
 /* Animations */
-
 @keyframes slideFromLeft {
     from {
         transform: translateX(-100%);
@@ -104,7 +102,6 @@ section:hover {
     }
 }
 
-
 @keyframes floatUp {
     from {
         opacity: 0;
@@ -114,5 +111,101 @@ section:hover {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Responsive ajustment */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .project-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .project-container section {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .h1-project {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .project-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .project-container section {
+        width: 95%;
+        box-sizing: border-box;
+    }
+
+    .h1-project {
+        margin-top: 10px;
+    }
+}
+
+/* zoomOut effect */
+
+@keyframes minDiv {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(0);
+        opacity: 0;
+
+
+    }
+}
+
+.shrink {
+    animation: minDiv 2s ease forwards;
+}
+
+.reverse {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.back{
+     display: flex;
+     justify-content: center;
+     font-size: 1.3rem;
+     margin-top: 2%;
+     text-decoration: none;
+     animation: floatUp 2s ease ;
+
+}
+
+.slide{
+    animation: slideFromRight 2s ease forwards;
+}
+
+@keyframes slideFromRight {
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(-50%);
+        opacity: 0.1;
+       
+    }
+
+    100%{
+        transform: translateX(-100%);
+        opacity: 0;
     }
 }
