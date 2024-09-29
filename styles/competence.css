@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.carousel-container {
+        display: flex;
+        gap: 20px; 
+        padding: 20px;
+        scrollbar-width: none; 
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        height: 80vh;
+    }
+
+
+
+.skills-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.skills-logo:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+.skills-logo:active{
+    box-shadow: 0 0 20px rgba(199, 0, 110, 0.7);
+}
+
+.skills-logo {
+    flex: 0 0 auto; 
+    width: 100px; 
+    height: 100px; 
+    scroll-snap-align: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px ;
+}

@@ -19,7 +19,7 @@ const loading = () => {
       if (res.length > 3) {
         return;
       }
-      p.textContent = "Loading" + res;
+      p.textContent = "Chargement" + res;
     }, 500);
   }
 };
