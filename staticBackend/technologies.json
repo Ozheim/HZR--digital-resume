@@ -1,0 +1,49 @@
+{
+  "competences": [
+    {
+      "nom": "CSS",
+      "niveau": "Autonome",
+      "description": "Je maîtrise CSS, y compris Flexbox, Grid, et les animations, ce qui me permet de créer des designs efficaces et réactifs de manière indépendante."
+    },
+    {
+      "nom": "Sass",
+      "niveau": "Autonome",
+      "description": "Je maîtrise Sass et l'utilise pour structurer mes styles avec des mixins, des variables et de l'imbrication, ce qui optimise la gestion de projets complexes."
+    },
+    {
+      "nom": "JavaScript",
+      "niveau": "Intermédiaire",
+      "description": "Bonne maîtrise du JavaScript moderne (ES6+), notamment pour la manipulation du DOM et la programmation asynchrone, avec encore quelques aspects à approfondir."
+    },
+    {
+      "nom": "Python",
+      "niveau": "Débutant confirmé",
+      "description": "Bonne compréhension des bases de Python, notamment pour écrire des scripts simples, manipuler des données, et automatiser des tâches de base."
+    },
+    {
+      "nom": "Git",
+      "niveau": "Pratique",
+      "description": "Je maîtrise Git, je connais bien les commandes de base, la gestion des branches et les workflows collaboratifs."
+    },
+    {
+      "nom": "MongoDB",
+      "niveau": "Intermédiaire",
+      "description": "Je peux utiliser MongoDB pour des bases de données NoSQL, notamment pour la gestion de données non structurées et la création d'API RESTful."
+    },
+    {
+      "nom": "React",
+      "niveau": "Solide",
+      "description": "Je maîtrise bien React pour créer des interfaces dynamiques et gérer efficacement l'état des composants avec hooks, mais j'ai encore quelques points à approfondir."
+    },
+    {
+      "nom": "HTML",
+      "niveau": "Autonome",
+      "description": "Bonne maîtrise du HTML pour structurer des pages web de manière sémantique et efficace, tout en respectant les bonnes pratiques."
+    },
+    {
+      "nom": "Express",
+      "niveau": "Intermédiaire",
+      "description": "Je peux utiliser Express.js pour développer des API backend efficaces et gérer la logique serveur dans des applications Node.js."
+    }
+  ]
+}
