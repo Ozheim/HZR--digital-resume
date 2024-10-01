@@ -3,7 +3,7 @@
     {
       "nom": "CSS",
       "niveau": "Autonome",
-      "description": "Je maîtrise CSS, y compris Flexbox, Grid, et les animations, ce qui me permet de créer des designs efficaces et réactifs de manière indépendante."
+      "description": "Je maîtrise bien le CSS, notamment Flexbox, les animations, et je crée des designs réactifs. Je ne maîtrise pas encore bien Grid."
     },
     {
       "nom": "Sass",
@@ -13,7 +13,7 @@
     {
       "nom": "JavaScript",
       "niveau": "Intermédiaire",
-      "description": "Bonne maîtrise du JavaScript moderne (ES6+), notamment pour la manipulation du DOM et la programmation asynchrone, avec encore quelques aspects à approfondir."
+      "description": "Bonne maîtrise du JavaScript moderne (ES6+), notamment pour la manipulation du DOM et la programmation asynchrone, avec encore des aspects à approfondir."
     },
     {
       "nom": "Python",
@@ -21,19 +21,19 @@
       "description": "Bonne compréhension des bases de Python, notamment pour écrire des scripts simples, manipuler des données, et automatiser des tâches de base."
     },
     {
-      "nom": "Git",
-      "niveau": "Pratique",
-      "description": "Je maîtrise Git, je connais bien les commandes de base, la gestion des branches et les workflows collaboratifs."
+       "nom": "Git",
+      "niveau": "Débutant confirmé",
+      "description": "Je maîtrise les bases de Git (commit, clone, push), mais je ne maîtrise pas encore la gestion des branches et les workflows collaboratifs."
     },
     {
       "nom": "MongoDB",
-      "niveau": "Intermédiaire",
+      "niveau": "Débutant confirmé",
       "description": "Je peux utiliser MongoDB pour des bases de données NoSQL, notamment pour la gestion de données non structurées et la création d'API RESTful."
     },
     {
       "nom": "React",
       "niveau": "Solide",
-      "description": "Je maîtrise bien React pour créer des interfaces dynamiques et gérer efficacement l'état des composants avec hooks, mais j'ai encore quelques points à approfondir."
+      "description": "Je maîtrise bien React pour construire des interfaces dynamiques et performantes. J'ai une bonne compréhension des hooks, et je suis capable d'en créer des efficaces pour gérer l'état et les effets. Cependant, je continue d'apprendre pour perfectionner l'utilisation des hooks dans des scénarios plus complexes."
     },
     {
       "nom": "HTML",
