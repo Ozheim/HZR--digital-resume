@@ -68,6 +68,8 @@ body {
     border: 2px solid rgba(0, 255, 255, 0.5);
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
     color: wheat;
+    visibility: hidden;
+    
 }
 
 .description h3 {
@@ -84,28 +86,71 @@ body {
 }
 
 
+
 @media screen and  (max-width : 768px){
 
     .wrapper{
+        flex-direction: row; 
         height: 100vh;
+        align-items:  center;
         width: 100%;
         display: flex;
-        justify-content: start;
+
     }
 
     .carousel-container{
         flex-direction: column;
-        width: 30%;
-        margin-top: 35%;
-        
+        width: 100%;
+        align-items: baseline;
+        margin: 0;
+        height: auto;
+
     }
 
     .skills-logo{
-        width: 50%;
+        width: 17%;
         height: 10vh;
+        margin-left: 6%;
   
     }
 
+     .description {
+        position: absolute;
+        max-width: 50%;
+   
+        padding: 20px; 
+        margin-left: 37%;
+        top : 30%
+    }
 
-    
+ 
+}
+
+@media screen and  (max-width : 615px){
+
+
+    .description{
+
+        margin-left: 35%;
+    }
+    .skills-logo img{
+        width: 100%;
+    }
+
+     .description h3{
+        font-size: 1.5rem;
+    }
+    .description p{
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and  (max-width : 464px){
+
+      .description{
+
+        margin-left: 33%;
+    }
+
 }

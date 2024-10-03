@@ -7,6 +7,8 @@ async function chargerCompetences() {
 const afficherDescription = (competence) => {
   const descriptionDiv = document.querySelector(".description");
 
+  descriptionDiv.style.visibility = "visible";
+
   descriptionDiv.innerHTML = `
         <h3>${competence.nom}</h3>
         <p>Niveau : ${competence.niveau}</p>
