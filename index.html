@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,56 +9,51 @@
     <link rel="stylesheet" href="./styles/glitchEffect.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../assets/Z_resized.png  " type="image/x-icon">
-
 </head>
+
 <body>
     <video class="video-background" loop autoplay muted>
         <source src="./assets/video.mp4" type="video/mp4">
     </video>
     <div class="effect ">
-    <header>
-        <div class="img-container"><img src="./assets/logo.png" alt="logo" class="logo"></div>
-        <h1 class="first-title">Heikel</h1>
-        <h2 class="second-title">Recherche Alternance en Developpement Web</h2>
-    </header>
-        
+        <header>
+            <div class="img-container"><img src="./assets/logo.png" alt="logo" class="logo"></div>
+            <h1 class="first-title">Heikel</h1>
+            <h2 class="second-title">Recherche Alternance en Developpement Web</h2>
+        </header>
         <main class="main-container">
             <!-- introduction  -->
             <div id="intro">
                 <h1 class="intro-title">Bienvenue sur mon CV interactif</h1>
                 <p id="loading"></p>
             </div>
-            
-
-          <!--Liste des liens -->
-        <ul>
-            <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)" class="layers glitch font" 
-                data-text="PROFIL">
-                <a href="./pages/profil.html" class="first-item">PROFIL</a>
-            </li>
-        
-            <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)" class="layers glitch font" data-text="PROJETS">
-                <a href="./pages/projets.html" class="second-item">PROJETS</a>
-            </li>
-        
-            <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)" class="layers glitch font" data-text="COMPETENCES">
-                <a href="./pages/competences.html" class="third-item">COMPETENCES</a>
-            </li>
-        
-            <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)" class="layers glitch font" data-text="CONTACT">
-                <a href="./pages/contact.html" class="fourth-item">CONTACT</a>
-            </li>
-        </ul>
-
-               
-
+            <!--Liste des liens -->
+            <ul>
+                <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)" class="layers glitch font"
+                    data-text="PROFIL">
+                    <a href="./pages/profil.html" class="first-item">PROFIL</a>
+                </li>
+                <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)" class="layers glitch font"
+                    data-text="PROJETS">
+                    <a href="./pages/projets.html" class="second-item">PROJETS</a>
+                </li>
+                <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)" class="layers glitch font"
+                    data-text="COMPETENCES">
+                    <a href="./pages/competences.html" class="third-item">COMPETENCES</a>
+                </li>
+                <li onmouseover="onOrOff(event)" onmouseout="onMouseOut(event)" class="layers glitch font"
+                    data-text="CONTACT">
+                    <a href="./pages/contact.html" class="fourth-item">CONTACT</a>
+                </li>
+            </ul>
         </main>
-
-            <script src="./Javascript/index.js"></script>
+        <script src="./Javascript/index.js"></script>
     </div>
+</body>
 
-</body> 
 </html>
