@@ -44,3 +44,19 @@ a.forEach((link) => {
     }, 1720);
   });
 });
+
+// preload video
+
+const preloadVideo = (src) => {
+  const video = document.createElement("video");
+  video.src = src;
+  video.preload = "auto";
+  video.muted = true;
+  video.style.display = "none";
+  document.body.appendChild(video);
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  preloadVideo("/assets/video.mp4");
+  preloadVideo("/assets/video-reverse.mp4");
+});
