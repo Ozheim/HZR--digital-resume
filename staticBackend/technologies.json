@@ -17,17 +17,17 @@
     },
     {
       "nom": "Python",
-      "niveau": "Débutant confirmé",
+      "niveau": "Débutant",
       "description": "Bonne compréhension des bases de Python, notamment pour écrire des scripts simples, manipuler des données, et automatiser des tâches de base."
     },
     {
        "nom": "Git",
-      "niveau": "Débutant confirmé",
+      "niveau": "Débutant",
       "description": "Je maîtrise les bases de Git (commit, clone, push), mais je ne maîtrise pas encore la gestion des branches et les workflows collaboratifs."
     },
     {
       "nom": "MongoDB",
-      "niveau": "Débutant confirmé",
+      "niveau": "Débutant",
       "description": "Je peux utiliser MongoDB pour des bases de données NoSQL, notamment pour la gestion de données non structurées et la création d'API RESTful."
     },
     {
