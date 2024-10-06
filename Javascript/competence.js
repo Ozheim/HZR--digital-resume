@@ -38,7 +38,7 @@ const back = document.querySelector(".back");
 back.addEventListener("click", (e) => {
   e.preventDefault();
 
-  video.src = "../assets/video-reverse.mp4";
+  video.src = "../assets/video-reverse.webm";
   video.classList.add("reverse");
   video.load();
 

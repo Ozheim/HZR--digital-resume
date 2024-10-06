@@ -1,18 +1,23 @@
-const mainDiv = document.querySelector(".project-container");
+const mainDivs = document.querySelectorAll(
+  ".project-container, .page-navigation"
+);
+
 const video = document.querySelector(".video-background");
 const back = document.querySelector(".back");
 
 back.addEventListener("click", (e) => {
   e.preventDefault();
 
-  video.src = "../assets/video-reverse.mp4";
+  video.src = "../assets/video-reverse.webm";
   video.classList.add("reverse");
   video.load();
 
   video.playbackRate = 2;
   video.play();
 
-  mainDiv.classList.add("shrink");
+  mainDivs.forEach((div) => {
+    div.classList.add("shrink");
+  });
 
   setTimeout(() => {
     window.location.href = "../index.html";
@@ -22,9 +27,6 @@ back.addEventListener("click", (e) => {
 // zoom in effect, same as other
 
 const a = document.querySelectorAll("a:not(.back) ");
-const mainDivs = document.querySelectorAll(
-  ".project-container, .page-navigation"
-);
 
 a.forEach((link) => {
   link.addEventListener("click", (event) => {

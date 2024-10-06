@@ -56,6 +56,6 @@ const preloadVideo = (src) => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  preloadVideo("/assets/video.mp4");
-  preloadVideo("/assets/video-reverse.mp4");
+  preloadVideo("/assets/video.webm");
+  preloadVideo("/assets/video-reverse.webm");
 });
