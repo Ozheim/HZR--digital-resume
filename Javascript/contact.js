@@ -27,7 +27,7 @@ back.addEventListener("click", (e) => {
 
 // zoom in on click, same as other
 
-const a = document.querySelectorAll("a");
+const a = document.querySelectorAll("a:not(.back)");
 
 a.forEach((link) => {
   link.addEventListener("click", (event) => {
