@@ -36,7 +36,9 @@ a.forEach((link) => {
     }
 
     event.preventDefault();
-    mainDivs.classList.add("hidden");
+    mainDivs.forEach((div) => {
+      div.classList.add("hidden");
+    });
 
     video.playbackRate = 2.0;
     video.classList.add("zoomIn");
