@@ -8,7 +8,7 @@ const back = document.querySelector(".back");
 back.addEventListener("click", (e) => {
   e.preventDefault();
 
-  video.src = "../assets/video-reverse.webm";
+  video.src = "../assets/video-reverse2.webm";
   video.classList.add("reverse");
 
   video.load();
