@@ -27,14 +27,17 @@ back.addEventListener("click", (e) => {
 
 // zoom in on click, same as other
 
-const a = document.querySelectorAll("a:not(.back)");
+const a = document.querySelectorAll("a");
 
 a.forEach((link) => {
   link.addEventListener("click", (event) => {
+    if (link.getAttribute("target") === "_blank") {
+      return;
+    }
+
     event.preventDefault();
-    mainDivs.forEach((div) => {
-      div.classList.add("hidden"); //classList dont work on multiple class in a same query selector
-    });
+    mainDivs.classList.add("hidden");
+
     video.playbackRate = 2.0;
     video.classList.add("zoomIn");
 
@@ -43,8 +46,6 @@ a.forEach((link) => {
     }, 1720);
   });
 });
-
-
 const preloadVideo = (src) => {
   const video = document.createElement("video");
   video.src = src;
@@ -57,4 +58,3 @@ document.addEventListener("DOMContentLoaded", () => {
   preloadVideo("/assets/video2.webm");
   preloadVideo("/assets/video-reverse2.webm");
 });
-
