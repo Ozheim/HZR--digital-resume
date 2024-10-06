@@ -123,7 +123,6 @@ footer{
 }
 
 .page-navigation {
-    width: 40%;
     text-align: center;
     background: rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -181,8 +180,12 @@ footer{
 }
 
 
-/* Responsive ajustment */
+/***************************************** Responsive ajustment *****************************************/
+
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
     .project-container {
         flex-direction: column;
         width: 100%;
@@ -214,6 +217,26 @@ footer{
 
     .h1-project {
         margin-top: 10px;
+    }
+
+    .page-navigation a{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .page-navigation{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .page-navigation a{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        height: 3.5vh;
+        font-size: 1.1rem;
+        
     }
 }
 
