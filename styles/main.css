@@ -38,11 +38,16 @@ body {
     font-size: 1.8rem;
     text-align: center;
     margin-top: 0.5rem;
-    color: white;
+    color: #00ffff;
+    text-shadow: 
+        0 0 3px #00ffff,  
+        0 0 8px #00ffff,   
+        0 0 15px #00ffff;  
     font-family: karla, sans-serif;
     font-weight: bold;
-    color:#555;
 }
+
+
 
 .main-container {
     display: flex;
