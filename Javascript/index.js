@@ -29,7 +29,7 @@ loading();
 /* zoom in effect */
 
 const body = document.querySelector(".effect");
-const a = document.querySelectorAll("a");
+const a = document.querySelectorAll("a:not(.back)");
 const video = document.querySelector("video");
 
 a.forEach((link) => {
@@ -41,6 +41,6 @@ a.forEach((link) => {
 
     setTimeout(() => {
       window.location.href = event.target.href;
-    }, 1820);
+    }, 1720);
   });
 });

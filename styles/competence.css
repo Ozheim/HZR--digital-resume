@@ -50,12 +50,10 @@ body {
 
 .skills-logo:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+    box-shadow: 0 0 15px #ff00ff;
 }
 
-.skills-logo:active {
-    box-shadow: 0 0 20px rgba(199, 0, 110, 0.7);
-}
+
 
 .description {
     text-align: center;
@@ -65,8 +63,8 @@ body {
     background-color: rgba(0, 0, 0, 0.35);
     padding: 20px;
     border-radius: 15px;
-    border: 2px solid rgba(0, 255, 255, 0.5);
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 15px #00ffff; 
     color: wheat;
     visibility: hidden;
     
@@ -86,9 +84,13 @@ body {
 }
 
 /* nav style */ 
-
+footer{
+    display: flex;
+    justify-content: center;
+}
 
 .page-navigation {
+    width: 40%;
     text-align: center;
     background: rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -117,6 +119,55 @@ body {
     text-shadow: 0 0 20px #ff00ff;
     transform: scale(1.1);
 }
+
+
+
+/* zoom out anim */ 
+
+
+@keyframes minDiv {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(0);
+        opacity: 0;
+
+
+    }
+}
+
+.shrink {
+    animation: minDiv 2s ease forwards;
+}
+/********************************** zooom in on click, same as other *******************************/
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+
+    }
+
+    100% {
+        transform: scale(4);
+      
+    }
+}
+
+.zoomIn {
+    animation: zoomIn 4s ease forwards ;
+}
+
+
+.hidden{
+ 
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+
+}
+
 
 @media screen and  (max-width : 768px){
 
