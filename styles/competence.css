@@ -90,7 +90,6 @@ footer{
 }
 
 .page-navigation {
-    width: 40%;
     text-align: center;
     background: rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -106,6 +105,8 @@ footer{
 }
 
 .page-navigation a {
+    display: flex;
+    width: 100%;
     color: #00ffff;
     text-decoration: none;
     font-size: 1.4rem; 
@@ -167,6 +168,12 @@ footer{
     transition: opacity 0.5s ease; 
 
 }
+@media screen and (max-width: 1070px) {
+    .skills-logo img {
+        height: 60%;
+        width: 60%;
+    }
+}
 
 
 @media screen and  (max-width : 768px){
@@ -216,7 +223,7 @@ footer{
         margin-left: 35%;
     }
     .skills-logo img{
-        width: 100%;
+        width: 80%;
     }
 
      .description h3{
@@ -227,6 +234,24 @@ footer{
     }
 }
 
+@media screen and (max-width:558px  ) {
+
+     .skills-logo img{
+        width: 90%;
+    }
+
+    .page-navigation{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .page-navigation a{
+        font-size: 1rem;
+    }
+
+}
+
+
 
 @media screen and  (max-width : 464px){
 
@@ -235,4 +260,26 @@ footer{
         margin-left: 33%;
     }
 
+}
+
+@media screen and (max-width:426px  ){
+
+    footer{
+        display: flex;
+    }
+
+       .page-navigation{
+        width: 45%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+    }
+    .page-navigation a{
+        display: flex;
+        font-size: 1rem;
+        justify-content: center;
+        gap: 10px;
+        height: 4vh;
+    }
 }
