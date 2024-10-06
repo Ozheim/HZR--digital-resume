@@ -21,6 +21,7 @@ body {
 
 
 
+
 .form-container {
     background: rgba(0, 0, 0, 0.8);
     width: 33%;
@@ -115,25 +116,71 @@ form{
 }
 
 /* nav style */
+
 .page-navigation {
-    padding: 0;
     text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-top: 2px solid #00ffff;
+    box-shadow: 0 0 15px #00ffff; 
+    border-radius: 20px; 
+    margin-top: 5%;
 }
 
 .page-navigation li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 25px; 
 }
 
 .page-navigation a {
     color: #00ffff;
     text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-    text-shadow: 0 0 10px #00ffff;
+    font-size: 1.4rem; 
+    transition: color 0.4s, text-shadow 0.4s; 
+    text-shadow: 0 0 15px #00ffff; 
+    font-weight: bold;
 }
 
 .page-navigation a:hover {
     color: #ff00ff;
-    text-shadow: 0 0 15px #ff00ff;
+    text-shadow: 0 0 20px #ff00ff;
+    transform: scale(1.1);
+}
+
+
+.back{
+    display: flex;
+    justify-content: center;
+    margin-top: 9%;
+    text-decoration: none;
+    color: #c7006e;
+}
+
+
+/* zoom out */
+
+@keyframes minDiv {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(0);
+        opacity: 0;
+
+
+    }
+}
+
+.shrink {
+    animation: minDiv 2s ease forwards;
+}
+
+.reverse {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }

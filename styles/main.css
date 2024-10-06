@@ -66,17 +66,23 @@ li {
 }
 
 a {
+    position: relative;
     color: white;
     text-decoration: none;
-    font-weight: 400;
-    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
-a:hover{
-    border: 1px solid #1bc7fb ;
-    padding: 2%;
+a:hover {
+    border: 2px solid #c7006e;
+    padding: 3%; 
     border-radius: 10px;
+    text-shadow: 0 0 5px #c7006e, 0 0 10px #c7006e;
+    box-shadow: 0 0 10px #c7006e, 0 0 20px #c7006e; 
+    background-color: rgba(27, 199, 251, 0.1);
+ 
 }
+
+
 
 .video-background {
     position: fixed;
@@ -144,7 +150,10 @@ a:hover{
 
 
 .hidden{
-    visibility: hidden;
+ 
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+
 }
 
 

@@ -124,6 +124,39 @@ main{
     color:  red;
 }
 
+/* nav style */ 
+
+
+.page-navigation {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-top: 2px solid #00ffff;
+    box-shadow: 0 0 15px #00ffff; 
+    border-radius: 20px; 
+    margin-top: 5%;
+}
+
+.page-navigation li {
+    display: inline-block;
+    margin: 0 25px; 
+}
+
+.page-navigation a {
+    color: #00ffff;
+    text-decoration: none;
+    font-size: 1.4rem; 
+    transition: color 0.4s, text-shadow 0.4s; 
+    text-shadow: 0 0 15px #00ffff; 
+    font-weight: bold;
+}
+
+.page-navigation a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 20px #ff00ff;
+    transform: scale(1.1);
+}
+
 
 @media screen and (min-width:767px) and (max-width:1024px) {
     .main-div {
