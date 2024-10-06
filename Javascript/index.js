@@ -51,7 +51,6 @@ const preloadVideo = (src) => {
   const video = document.createElement("video");
   video.src = src;
   video.preload = "auto";
-  video.muted = true;
   video.style.display = "none";
   document.body.appendChild(video);
 };
