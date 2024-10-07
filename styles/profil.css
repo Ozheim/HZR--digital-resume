@@ -186,6 +186,18 @@ main{
 
 /************************************************ query **********************************************************/ 
 
+@media screen and (max-width: 1481px){
+    .page-navigation{
+        display: flex;
+        flex-direction: column;
+        margin:0;
+    }
+    .page-navigation a{
+        margin: 0;
+    }
+}
+
+
 
 @media screen and (min-width:767px) and (max-width:1024px) {
     .main-div {
@@ -229,8 +241,11 @@ main{
         margin-top: 11%;
     }
 
-    .back{
-        margin-top: 22%;
+    .page-navigation a {
+        font-size: 1.2rem;
+        margin-top: 6%;
     }
+
+
 }
 
