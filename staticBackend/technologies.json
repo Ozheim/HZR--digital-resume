@@ -21,9 +21,9 @@
       "description": "Bonne compréhension des bases de Python, notamment pour écrire des scripts simples, manipuler des données, et automatiser des tâches de base."
     },
     {
-       "nom": "Git",
-      "niveau": "Débutant",
-      "description": "Je maîtrise les bases de Git (commit, clone, push), mais je ne maîtrise pas encore la gestion des branches et les workflows collaboratifs."
+      "nom": "Git",
+      "niveau": "Intermédiaire",
+      "description": "Compétent dans la gestion des branches, les merges, et la création d'architectures Git robustes. Actuellement en perfectionnement sur les workflows collaboratifs."
     },
     {
       "nom": "MongoDB",
